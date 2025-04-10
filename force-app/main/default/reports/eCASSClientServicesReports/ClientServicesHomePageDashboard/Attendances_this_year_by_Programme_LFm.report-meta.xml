@@ -14,7 +14,7 @@
         <groupingColumn>CUST_RECORDTYPE</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_BOTTOM</location>
-        <secondaryGroupingColumn>Attendance__c.Programme__c</secondaryGroupingColumn>
+        <secondaryGroupingColumn>eCASS02t1__Attendance__c.eCASS02t1__Programme__c</secondaryGroupingColumn>
         <showAxisLabels>false</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
@@ -31,7 +31,7 @@
     </columns>
     <filter>
         <criteriaItems>
-            <column>Attendance__c.Attended__c</column>
+            <column>eCASS02t1__Attendance__c.eCASS02t1__Attended__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
@@ -46,7 +46,7 @@
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Attendance__c.Programme__c</field>
+        <field>eCASS02t1__Attendance__c.eCASS02t1__Programme__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Attendances this year by Programme</name>
@@ -54,13 +54,13 @@
         <name>co</name>
         <value>1</value>
     </params>
-    <reportType>CustomEntity$Attendance__c</reportType>
+    <reportType>CustomEntity$eCASS02t1__Attendance__c</reportType>
     <scope>organization</scope>
     <showDetails>false</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
-        <dateColumn>Attendance__c.Attendance_Date__c</dateColumn>
+        <dateColumn>eCASS02t1__Attendance__c.eCASS02t1__Attendance_Date__c</dateColumn>
         <interval>INTERVAL_CURFY</interval>
     </timeFrameFilter>
 </Report>

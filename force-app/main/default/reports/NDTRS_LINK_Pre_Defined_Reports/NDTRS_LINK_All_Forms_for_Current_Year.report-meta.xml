@@ -5,7 +5,7 @@
         <developerName>BucketField_18750676</developerName>
         <masterLabel>Age Categories</masterLabel>
         <nullTreatment>n</nullTreatment>
-        <sourceColumnName>FK_$Contact.X4b_Age__c</sourceColumnName>
+        <sourceColumnName>FK_$Contact.eCASS02t1__X4b_Age__c</sourceColumnName>
         <useOther>false</useOther>
         <values>
             <sourceValues>
@@ -54,7 +54,7 @@
         <masterLabel>Is the NDTRS Form active or closed?</masterLabel>
         <nullTreatment>n</nullTreatment>
         <otherBucketLabel>Other</otherBucketLabel>
-        <sourceColumnName>NDTRS_Form_2016__c.X33a_Exit_details__c</sourceColumnName>
+        <sourceColumnName>eCASS02t1__NDTRS_Form_2016__c.eCASS02t1__X33a_Exit_details__c</sourceColumnName>
         <useOther>false</useOther>
         <values>
             <sourceValues>
@@ -104,7 +104,7 @@
         <chartType>HorizontalBarStacked</chartType>
         <enableHoverLabels>true</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>NDTRS_Form_2016__c.Centre__c</groupingColumn>
+        <groupingColumn>eCASS02t1__NDTRS_Form_2016__c.eCASS02t1__Centre__c</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_TOP</location>
         <secondaryGroupingColumn>BucketField_70428780</secondaryGroupingColumn>
@@ -120,31 +120,31 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
-        <field>FK_$Contact.Full_name__c</field>
+        <field>FK_$Contact.eCASS02t1__Full_name__c</field>
     </columns>
     <columns>
-        <field>FK_$Contact.HRB_Client_ID__c</field>
+        <field>FK_$Contact.eCASS02t1__HRB_Client_ID__c</field>
     </columns>
     <columns>
-        <field>NDTRS_Form_2016__c.X12_Date_of_Referral__c</field>
+        <field>eCASS02t1__NDTRS_Form_2016__c.eCASS02t1__X12_Date_of_Referral__c</field>
     </columns>
     <columns>
-        <field>FK_$Contact.X4_Gender__c</field>
+        <field>FK_$Contact.eCASS02t1__X4_Gender__c</field>
     </columns>
     <columns>
         <field>BucketField_18750676</field>
     </columns>
     <columns>
-        <field>FK_$Contact.X4b_Age__c</field>
+        <field>FK_$Contact.eCASS02t1__X4b_Age__c</field>
     </columns>
     <columns>
-        <field>NDTRS_Form_2016__c.X13_Main_Reason_for_referral__c</field>
+        <field>eCASS02t1__NDTRS_Form_2016__c.eCASS02t1__X13_Main_Reason_for_referral__c</field>
     </columns>
     <columns>
-        <field>NDTRS_Form_2016__c.X35_Date_of_Final_Discharge_or_transfer__c</field>
+        <field>eCASS02t1__NDTRS_Form_2016__c.eCASS02t1__X35_Date_of_Final_Discharge_or_transfer__c</field>
     </columns>
     <columns>
-        <field>NDTRS_Form_2016__c.X33a_Exit_details__c</field>
+        <field>eCASS02t1__NDTRS_Form_2016__c.eCASS02t1__X33a_Exit_details__c</field>
     </columns>
     <columns>
         <field>CUST_CREATED_NAME</field>
@@ -156,7 +156,7 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>NDTRS_Form_2016__c.Centre__c</field>
+        <field>eCASS02t1__NDTRS_Form_2016__c.eCASS02t1__Centre__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>
@@ -169,13 +169,13 @@
         <name>co</name>
         <value>1</value>
     </params>
-    <reportType>CustomEntity$NDTRS_Form_2016__c@NDTRS_Form_2016__c.Contact__c</reportType>
+    <reportType>CustomEntity$eCASS02t1__NDTRS_Form_2016__c@eCASS02t1__NDTRS_Form_2016__c.eCASS02t1__Contact__c</reportType>
     <scope>organization</scope>
     <showDetails>false</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
-        <dateColumn>NDTRS_Form_2016__c.X12_Date_of_Referral__c</dateColumn>
+        <dateColumn>eCASS02t1__NDTRS_Form_2016__c.eCASS02t1__X12_Date_of_Referral__c</dateColumn>
         <interval>INTERVAL_CURY</interval>
     </timeFrameFilter>
 </Report>

@@ -5,7 +5,7 @@
         <developerName>BucketField_3125745</developerName>
         <masterLabel>Age Categories</masterLabel>
         <nullTreatment>n</nullTreatment>
-        <sourceColumnName>FK_$Contact.X4b_Age__c</sourceColumnName>
+        <sourceColumnName>FK_$Contact.eCASS02t1__X4b_Age__c</sourceColumnName>
         <useOther>false</useOther>
         <values>
             <sourceValues>
@@ -54,7 +54,7 @@
         <masterLabel>Exit Details - Reason for Discharge</masterLabel>
         <nullTreatment>n</nullTreatment>
         <otherBucketLabel>Other</otherBucketLabel>
-        <sourceColumnName>NDTRS_Form_2016__c.X33a_Exit_details__c</sourceColumnName>
+        <sourceColumnName>eCASS02t1__NDTRS_Form_2016__c.eCASS02t1__X33a_Exit_details__c</sourceColumnName>
         <useOther>true</useOther>
         <values>
             <sourceValues>
@@ -116,7 +116,7 @@
         <chartType>VerticalColumn</chartType>
         <enableHoverLabels>true</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>NDTRS_Form_2016__c.X34_Client_s_Condition_on_discharge__c</groupingColumn>
+        <groupingColumn>eCASS02t1__NDTRS_Form_2016__c.eCASS02t1__X34_Client_s_Condition_on_discharge__c</groupingColumn>
         <location>CHART_TOP</location>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
@@ -130,25 +130,25 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
-        <field>FK_$Contact.Full_name__c</field>
+        <field>FK_$Contact.eCASS02t1__Full_name__c</field>
     </columns>
     <columns>
-        <field>FK_$Contact.HRB_Client_ID__c</field>
+        <field>FK_$Contact.eCASS02t1__HRB_Client_ID__c</field>
     </columns>
     <columns>
-        <field>FK_$Contact.X4_Gender__c</field>
+        <field>FK_$Contact.eCASS02t1__X4_Gender__c</field>
     </columns>
     <columns>
-        <field>FK_$Contact.X4b_Age__c</field>
+        <field>FK_$Contact.eCASS02t1__X4b_Age__c</field>
     </columns>
     <columns>
         <field>BucketField_3125745</field>
     </columns>
     <columns>
-        <field>NDTRS_Form_2016__c.X12_Date_of_Referral__c</field>
+        <field>eCASS02t1__NDTRS_Form_2016__c.eCASS02t1__X12_Date_of_Referral__c</field>
     </columns>
     <columns>
-        <field>NDTRS_Form_2016__c.X35_Date_of_Final_Discharge_or_transfer__c</field>
+        <field>eCASS02t1__NDTRS_Form_2016__c.eCASS02t1__X35_Date_of_Final_Discharge_or_transfer__c</field>
     </columns>
     <columns>
         <field>CUST_CREATED_NAME</field>
@@ -159,7 +159,7 @@
     <description>A service report with a report on the condition of clients at discharge or exit from service</description>
     <filter>
         <criteriaItems>
-            <column>NDTRS_Form_2016__c.X35_Date_of_Final_Discharge_or_transfer__c</column>
+            <column>eCASS02t1__NDTRS_Form_2016__c.eCASS02t1__X35_Date_of_Final_Discharge_or_transfer__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
@@ -169,12 +169,12 @@
     <format>Matrix</format>
     <groupingsAcross>
         <dateGranularity>Day</dateGranularity>
-        <field>NDTRS_Form_2016__c.X34_Client_s_Condition_on_discharge__c</field>
+        <field>eCASS02t1__NDTRS_Form_2016__c.eCASS02t1__X34_Client_s_Condition_on_discharge__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsAcross>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>NDTRS_Form_2016__c.Centre__c</field>
+        <field>eCASS02t1__NDTRS_Form_2016__c.eCASS02t1__Centre__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>NDTRS LINK: Condition at Discharge</name>
@@ -182,13 +182,13 @@
         <name>co</name>
         <value>1</value>
     </params>
-    <reportType>CustomEntity$NDTRS_Form_2016__c@NDTRS_Form_2016__c.Contact__c</reportType>
+    <reportType>CustomEntity$eCASS02t1__NDTRS_Form_2016__c@eCASS02t1__NDTRS_Form_2016__c.eCASS02t1__Contact__c</reportType>
     <scope>organization</scope>
     <showDetails>false</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
-        <dateColumn>NDTRS_Form_2016__c.X12_Date_of_Referral__c</dateColumn>
+        <dateColumn>eCASS02t1__NDTRS_Form_2016__c.eCASS02t1__X12_Date_of_Referral__c</dateColumn>
         <interval>INTERVAL_CURY</interval>
     </timeFrameFilter>
 </Report>

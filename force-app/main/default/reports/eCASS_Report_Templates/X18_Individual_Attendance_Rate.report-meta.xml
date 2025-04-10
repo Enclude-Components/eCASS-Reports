@@ -11,7 +11,7 @@
         <chartType>Pie</chartType>
         <enableHoverLabels>true</enableHoverLabels>
         <expandOthers>false</expandOthers>
-        <groupingColumn>Activity.Status__c</groupingColumn>
+        <groupingColumn>Activity.eCASS02t1__Status__c</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_TOP</location>
         <showAxisLabels>true</showAxisLabels>
@@ -26,10 +26,10 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
-        <field>Activity.Programme__c</field>
+        <field>Activity.eCASS02t1__Programme__c</field>
     </columns>
     <columns>
-        <field>Activity.Activity_Type__c</field>
+        <field>Activity.eCASS02t1__Activity_Type__c</field>
     </columns>
     <columns>
         <field>SUBJECT</field>
@@ -49,7 +49,7 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Activity.Status__c</field>
+        <field>Activity.eCASS02t1__Status__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>18. Individual Attendance Rate</name>

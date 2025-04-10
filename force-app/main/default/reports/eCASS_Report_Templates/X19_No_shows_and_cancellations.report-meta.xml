@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
-        <field>Contact.Full_name__c</field>
+        <field>Contact.eCASS02t1__Full_name__c</field>
     </columns>
     <columns>
         <field>SUBJECT</field>
     </columns>
     <columns>
-        <field>Activity.Status_Comment__c</field>
+        <field>Activity.eCASS02t1__Status_Comment__c</field>
     </columns>
     <filter>
         <criteriaItems>
-            <column>Activity.Status__c</column>
+            <column>Activity.eCASS02t1__Status__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
@@ -21,17 +21,17 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Activity.Programme__c</field>
+        <field>Activity.eCASS02t1__Programme__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Activity.Activity_Type__c</field>
+        <field>Activity.eCASS02t1__Activity_Type__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Activity.Status__c</field>
+        <field>Activity.eCASS02t1__Status__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>19. No shows and cancellations</name>

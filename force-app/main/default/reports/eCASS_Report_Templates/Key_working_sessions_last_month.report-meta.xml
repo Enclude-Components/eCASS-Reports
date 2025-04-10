@@ -15,14 +15,14 @@
     </columns>
     <filter>
         <criteriaItems>
-            <column>Activity.Activity_Type__c</column>
+            <column>Activity.eCASS02t1__Activity_Type__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Key Working</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Activity.Status__c</column>
+            <column>Activity.eCASS02t1__Status__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
@@ -32,7 +32,7 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Activity.Programme__c</field>
+        <field>Activity.eCASS02t1__Programme__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>
@@ -42,7 +42,7 @@
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Contact.Full_name__c</field>
+        <field>Contact.eCASS02t1__Full_name__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>20. Key working sessions last month</name>

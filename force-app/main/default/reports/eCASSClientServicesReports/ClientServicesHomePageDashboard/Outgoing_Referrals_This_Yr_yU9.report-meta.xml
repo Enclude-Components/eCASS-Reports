@@ -11,7 +11,7 @@
         <chartType>Donut</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>false</expandOthers>
-        <groupingColumn>Referral__c.Referred_to_Organisation_external__c</groupingColumn>
+        <groupingColumn>eCASS02t1__Referral__c.eCASS02t1__Referred_to_Organisation_external__c</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_BOTTOM</location>
         <showAxisLabels>false</showAxisLabels>
@@ -34,13 +34,13 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Referral__c.Outgoing</value>
+            <value>eCASS02t1__Referral__c.Outgoing</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Referral__c.Referred_to_Organisation_external__c</field>
+        <field>eCASS02t1__Referral__c.eCASS02t1__Referred_to_Organisation_external__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Outgoing Referrals This Yr</name>
@@ -48,13 +48,13 @@
         <name>co</name>
         <value>1</value>
     </params>
-    <reportType>CustomEntity$Referral__c</reportType>
+    <reportType>CustomEntity$eCASS02t1__Referral__c</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
-        <dateColumn>Referral__c.Date_of_Referral__c</dateColumn>
+        <dateColumn>eCASS02t1__Referral__c.eCASS02t1__Date_of_Referral__c</dateColumn>
         <interval>INTERVAL_CURFY</interval>
     </timeFrameFilter>
 </Report>

@@ -11,7 +11,7 @@
         <chartType>Donut</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>false</expandOthers>
-        <groupingColumn>Referral__c.Source_of_Referral__c</groupingColumn>
+        <groupingColumn>eCASS02t1__Referral__c.eCASS02t1__Source_of_Referral__c</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_BOTTOM</location>
         <showAxisLabels>true</showAxisLabels>
@@ -30,13 +30,13 @@
         <field>CUST_NAME</field>
     </columns>
     <columns>
-        <field>Referral__c.Date_of_Referral__c</field>
+        <field>eCASS02t1__Referral__c.eCASS02t1__Date_of_Referral__c</field>
     </columns>
     <columns>
-        <field>Referral__c.Referral_Status__c</field>
+        <field>eCASS02t1__Referral__c.eCASS02t1__Referral_Status__c</field>
     </columns>
     <columns>
-        <field>Referral__c.Client_Status__c</field>
+        <field>eCASS02t1__Referral__c.eCASS02t1__Client_Status__c</field>
     </columns>
     <description>Incoming Referrals by Referral Source</description>
     <filter>
@@ -45,13 +45,13 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Referral__c.Incoming</value>
+            <value>eCASS02t1__Referral__c.Incoming</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Referral__c.Source_of_Referral__c</field>
+        <field>eCASS02t1__Referral__c.eCASS02t1__Source_of_Referral__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Incoming Referrals this year by Source</name>
@@ -59,13 +59,13 @@
         <name>co</name>
         <value>1</value>
     </params>
-    <reportType>CustomEntity$Referral__c</reportType>
+    <reportType>CustomEntity$eCASS02t1__Referral__c</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
-        <dateColumn>Referral__c.Date_of_Referral__c</dateColumn>
+        <dateColumn>eCASS02t1__Referral__c.eCASS02t1__Date_of_Referral__c</dateColumn>
         <interval>INTERVAL_CURY</interval>
     </timeFrameFilter>
 </Report>

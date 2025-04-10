@@ -4,7 +4,7 @@
         <field>CUST_NAME</field>
     </columns>
     <columns>
-        <field>NDTRS_Drugs__c.Item_Code__c</field>
+        <field>eCASS02t1__NDTRS_Drugs__c.eCASS02t1__Item_Code__c</field>
     </columns>
     <columns>
         <field>CUST_LAST_UPDATE_NAME</field>
@@ -21,7 +21,7 @@
         <name>co</name>
         <value>1</value>
     </params>
-    <reportType>CustomEntity$NDTRS_Drugs__c</reportType>
+    <reportType>CustomEntity$eCASS02t1__NDTRS_Drugs__c</reportType>
     <scope>organization</scope>
     <showDetails>false</showDetails>
     <showGrandTotal>true</showGrandTotal>

@@ -11,7 +11,7 @@
         <chartType>Pie</chartType>
         <enableHoverLabels>true</enableHoverLabels>
         <expandOthers>false</expandOthers>
-        <groupingColumn>FK_$Contact.X4_Gender__c</groupingColumn>
+        <groupingColumn>FK_$Contact.eCASS02t1__X4_Gender__c</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_TOP</location>
         <showAxisLabels>true</showAxisLabels>
@@ -27,25 +27,25 @@
     </chart>
     <columns>
         <aggregateTypes>Average</aggregateTypes>
-        <field>FK_$Contact.Age__c</field>
+        <field>FK_$Contact.eCASS02t1__Age__c</field>
     </columns>
     <filter>
         <criteriaItems>
-            <column>Referral__c.Referred_to_Programme__c</column>
+            <column>eCASS02t1__Referral__c.eCASS02t1__Referred_to_Programme__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
-            <column>Referral__c.Client_Status__c</column>
+            <column>eCASS02t1__Referral__c.eCASS02t1__Client_Status__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Active</value>
         </criteriaItems>
         <criteriaItems>
-            <column>FK_$Contact.X4_Gender__c</column>
+            <column>FK_$Contact.eCASS02t1__X4_Gender__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
@@ -55,7 +55,7 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>FK_$Contact.X4_Gender__c</field>
+        <field>FK_$Contact.eCASS02t1__X4_Gender__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Current age &amp; Gender</name>
@@ -63,13 +63,13 @@
         <name>co</name>
         <value>1</value>
     </params>
-    <reportType>CustomEntity$Referral__c@Referral__c.Client__c</reportType>
+    <reportType>CustomEntity$eCASS02t1__Referral__c@eCASS02t1__Referral__c.eCASS02t1__Client__c</reportType>
     <scope>organization</scope>
     <showDetails>false</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
-        <dateColumn>Referral__c.Date_of_Referral__c</dateColumn>
+        <dateColumn>eCASS02t1__Referral__c.eCASS02t1__Date_of_Referral__c</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>
     </timeFrameFilter>
 </Report>

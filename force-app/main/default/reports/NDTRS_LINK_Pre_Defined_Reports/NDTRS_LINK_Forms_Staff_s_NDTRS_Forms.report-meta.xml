@@ -11,10 +11,10 @@
         <chartType>HorizontalBarStacked</chartType>
         <enableHoverLabels>true</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>NDTRS_Form_2016__c.Centre__c</groupingColumn>
+        <groupingColumn>eCASS02t1__NDTRS_Form_2016__c.eCASS02t1__Centre__c</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_TOP</location>
-        <secondaryGroupingColumn>NDTRS_Form_2016__c.NDTRS_Warnings_Status__c</secondaryGroupingColumn>
+        <secondaryGroupingColumn>eCASS02t1__NDTRS_Form_2016__c.eCASS02t1__NDTRS_Warnings_Status__c</secondaryGroupingColumn>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
@@ -30,31 +30,31 @@
         <field>CUST_NAME</field>
     </columns>
     <columns>
-        <field>NDTRS_Form_2016__c.NDTRS_Treatment_Status__c</field>
+        <field>eCASS02t1__NDTRS_Form_2016__c.eCASS02t1__NDTRS_Treatment_Status__c</field>
     </columns>
     <columns>
-        <field>NDTRS_Form_2016__c.NDTRS_Submit_Status__c</field>
+        <field>eCASS02t1__NDTRS_Form_2016__c.eCASS02t1__NDTRS_Submit_Status__c</field>
     </columns>
     <columns>
-        <field>FK_$Contact.Full_name__c</field>
+        <field>FK_$Contact.eCASS02t1__Full_name__c</field>
     </columns>
     <columns>
-        <field>NDTRS_Form_2016__c.X12_Date_of_Referral__c</field>
+        <field>eCASS02t1__NDTRS_Form_2016__c.eCASS02t1__X12_Date_of_Referral__c</field>
     </columns>
     <columns>
-        <field>NDTRS_Form_2016__c.X13_Main_Reason_for_referral__c</field>
+        <field>eCASS02t1__NDTRS_Form_2016__c.eCASS02t1__X13_Main_Reason_for_referral__c</field>
     </columns>
     <columns>
-        <field>NDTRS_Form_2016__c.X14_Source_of_referral__c</field>
+        <field>eCASS02t1__NDTRS_Form_2016__c.eCASS02t1__X14_Source_of_referral__c</field>
     </columns>
     <columns>
-        <field>NDTRS_Form_2016__c.X15_Date_of_initial_assessment__c</field>
+        <field>eCASS02t1__NDTRS_Form_2016__c.eCASS02t1__X15_Date_of_initial_assessment__c</field>
     </columns>
     <columns>
-        <field>NDTRS_Form_2016__c.X16_Assessment_outcome__c</field>
+        <field>eCASS02t1__NDTRS_Form_2016__c.eCASS02t1__X16_Assessment_outcome__c</field>
     </columns>
     <columns>
-        <field>NDTRS_Form_2016__c.X17_Where_client_is_suitable_for_treatme__c</field>
+        <field>eCASS02t1__NDTRS_Form_2016__c.eCASS02t1__X17_Where_client_is_suitable_for_treatme__c</field>
     </columns>
     <columns>
         <field>CUST_CREATED_NAME</field>
@@ -63,18 +63,18 @@
         <field>CUST_CREATED_DATE</field>
     </columns>
     <columns>
-        <field>NDTRS_Form_2016__c.NDTRS_2016_Report__c</field>
+        <field>eCASS02t1__NDTRS_Form_2016__c.eCASS02t1__NDTRS_2016_Report__c</field>
     </columns>
     <description>A report containing an individual staff member/project worker&apos;s incomplete/complete NDTRS Forms and their status on the Health Research Board&apos;s LINK system</description>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>NDTRS_Form_2016__c.Centre__c</field>
+        <field>eCASS02t1__NDTRS_Form_2016__c.eCASS02t1__Centre__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>NDTRS_Form_2016__c.NDTRS_Warnings_Status__c</field>
+        <field>eCASS02t1__NDTRS_Form_2016__c.eCASS02t1__NDTRS_Warnings_Status__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>NDTRS LINK Forms: Staff&apos;s NDTRS Forms</name>
@@ -82,7 +82,7 @@
         <name>co</name>
         <value>1</value>
     </params>
-    <reportType>CustomEntity$NDTRS_Form_2016__c@NDTRS_Form_2016__c.Contact__c</reportType>
+    <reportType>CustomEntity$eCASS02t1__NDTRS_Form_2016__c@eCASS02t1__NDTRS_Form_2016__c.eCASS02t1__Contact__c</reportType>
     <scope>user</scope>
     <showDetails>false</showDetails>
     <showGrandTotal>true</showGrandTotal>

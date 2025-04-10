@@ -7,12 +7,12 @@
         <chartSummaries>
             <aggregate>Sum</aggregate>
             <axisBinding>y</axisBinding>
-            <column>Attendance__c.Duration_in_minutes__c</column>
+            <column>eCASS02t1__Attendance__c.eCASS02t1__Duration_in_minutes__c</column>
         </chartSummaries>
         <chartType>Pie</chartType>
         <enableHoverLabels>true</enableHoverLabels>
         <expandOthers>false</expandOthers>
-        <groupingColumn>Attendance__c.Programme__c</groupingColumn>
+        <groupingColumn>eCASS02t1__Attendance__c.eCASS02t1__Programme__c</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_TOP</location>
         <showAxisLabels>true</showAxisLabels>
@@ -28,18 +28,18 @@
     </chart>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
-        <field>Attendance__c.Duration_in_minutes__c</field>
+        <field>eCASS02t1__Attendance__c.eCASS02t1__Duration_in_minutes__c</field>
     </columns>
     <filter>
         <criteriaItems>
-            <column>Attendance__c.Status__c</column>
+            <column>eCASS02t1__Attendance__c.eCASS02t1__Status__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Attended</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Attendance__c.Activity_Type__c</column>
+            <column>eCASS02t1__Attendance__c.eCASS02t1__Activity_Type__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
@@ -49,12 +49,12 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Attendance__c.Programme__c</field>
+        <field>eCASS02t1__Attendance__c.eCASS02t1__Programme__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Attendance__c.Activity_Type__c</field>
+        <field>eCASS02t1__Attendance__c.eCASS02t1__Activity_Type__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>21. All activities by programme</name>
@@ -62,13 +62,13 @@
         <name>co</name>
         <value>1</value>
     </params>
-    <reportType>CustomEntity$Attendance__c@Attendance__c.Young_Person__c</reportType>
+    <reportType>CustomEntity$eCASS02t1__Attendance__c@eCASS02t1__Attendance__c.eCASS02t1__Young_Person__c</reportType>
     <scope>organization</scope>
     <showDetails>false</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
-        <dateColumn>Attendance__c.Attendance_Date__c</dateColumn>
+        <dateColumn>eCASS02t1__Attendance__c.eCASS02t1__Attendance_Date__c</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>
     </timeFrameFilter>
 </Report>

@@ -11,7 +11,7 @@
         <chartType>Donut</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>false</expandOthers>
-        <groupingColumn>Attendance__c.Status__c</groupingColumn>
+        <groupingColumn>eCASS02t1__Attendance__c.eCASS02t1__Status__c</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_BOTTOM</location>
         <showAxisLabels>false</showAxisLabels>
@@ -31,7 +31,7 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Attendance__c.Status__c</field>
+        <field>eCASS02t1__Attendance__c.eCASS02t1__Status__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>One to one Attendance status this yr</name>
@@ -39,13 +39,13 @@
         <name>co</name>
         <value>1</value>
     </params>
-    <reportType>CustomEntity$Attendance__c</reportType>
+    <reportType>CustomEntity$eCASS02t1__Attendance__c</reportType>
     <scope>organization</scope>
     <showDetails>false</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
-        <dateColumn>Attendance__c.Attendance_Date__c</dateColumn>
+        <dateColumn>eCASS02t1__Attendance__c.eCASS02t1__Attendance_Date__c</dateColumn>
         <interval>INTERVAL_CURFY</interval>
     </timeFrameFilter>
 </Report>

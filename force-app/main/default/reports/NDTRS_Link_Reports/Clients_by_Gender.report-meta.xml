@@ -7,7 +7,7 @@
         <field>LAST_NAME</field>
     </columns>
     <columns>
-        <field>Contact.X4_Gender__c</field>
+        <field>Contact.eCASS02t1__X4_Gender__c</field>
     </columns>
     <filter>
         <criteriaItems>

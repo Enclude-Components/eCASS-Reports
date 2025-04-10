@@ -11,7 +11,7 @@
         <chartType>Pie</chartType>
         <enableHoverLabels>true</enableHoverLabels>
         <expandOthers>false</expandOthers>
-        <groupingColumn>HRB_Form__c.X14_Main_Reason_for_Referral_Drug__c</groupingColumn>
+        <groupingColumn>eCASS02t1__HRB_Form__c.eCASS02t1__X14_Main_Reason_for_Referral_Drug__c</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_TOP</location>
         <showAxisLabels>true</showAxisLabels>
@@ -26,18 +26,18 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
-        <field>HRB_Form__c.Contact__c</field>
+        <field>eCASS02t1__HRB_Form__c.eCASS02t1__Contact__c</field>
     </columns>
     <filter>
         <criteriaItems>
-            <column>HRB_Form__c.X14_Main_Reason_for_Referral_Drug__c</column>
+            <column>eCASS02t1__HRB_Form__c.eCASS02t1__X14_Main_Reason_for_Referral_Drug__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
-            <column>HRB_Form__c.X37_Date_of_Final_Discharge__c</column>
+            <column>eCASS02t1__HRB_Form__c.eCASS02t1__X37_Date_of_Final_Discharge__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
@@ -47,7 +47,7 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>HRB_Form__c.X14_Main_Reason_for_Referral_Drug__c</field>
+        <field>eCASS02t1__HRB_Form__c.eCASS02t1__X14_Main_Reason_for_Referral_Drug__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>2. Main drug type for clients (Obsolete)</name>
@@ -55,13 +55,13 @@
         <name>co</name>
         <value>1</value>
     </params>
-    <reportType>CustomEntity$HRB_Form__c</reportType>
+    <reportType>CustomEntity$eCASS02t1__HRB_Form__c</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
-        <dateColumn>HRB_Form__c.X13_Date_of_Referral__c</dateColumn>
+        <dateColumn>eCASS02t1__HRB_Form__c.eCASS02t1__X13_Date_of_Referral__c</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>
     </timeFrameFilter>
 </Report>

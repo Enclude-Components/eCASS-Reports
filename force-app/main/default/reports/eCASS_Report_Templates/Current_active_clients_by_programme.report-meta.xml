@@ -11,7 +11,7 @@
         <chartType>VerticalColumn</chartType>
         <enableHoverLabels>true</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>Referral__c.Referred_to_Programme__c</groupingColumn>
+        <groupingColumn>eCASS02t1__Referral__c.eCASS02t1__Referred_to_Programme__c</groupingColumn>
         <location>CHART_TOP</location>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
@@ -26,14 +26,14 @@
     </chart>
     <filter>
         <criteriaItems>
-            <column>Referral__c.Referred_to_Programme__c</column>
+            <column>eCASS02t1__Referral__c.eCASS02t1__Referred_to_Programme__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
-            <column>Referral__c.Client_Status__c</column>
+            <column>eCASS02t1__Referral__c.eCASS02t1__Client_Status__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
@@ -43,12 +43,12 @@
     <format>Matrix</format>
     <groupingsAcross>
         <dateGranularity>Day</dateGranularity>
-        <field>Referral__c.Source_of_Referral__c</field>
+        <field>eCASS02t1__Referral__c.eCASS02t1__Source_of_Referral__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsAcross>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Referral__c.Referred_to_Programme__c</field>
+        <field>eCASS02t1__Referral__c.eCASS02t1__Referred_to_Programme__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>7. Current active clients by programme</name>
@@ -56,13 +56,13 @@
         <name>co</name>
         <value>1</value>
     </params>
-    <reportType>CustomEntity$Referral__c@Referral__c.Client__c</reportType>
+    <reportType>CustomEntity$eCASS02t1__Referral__c@eCASS02t1__Referral__c.eCASS02t1__Client__c</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
-        <dateColumn>Referral__c.Date_of_Referral__c</dateColumn>
+        <dateColumn>eCASS02t1__Referral__c.eCASS02t1__Date_of_Referral__c</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>
     </timeFrameFilter>
 </Report>
