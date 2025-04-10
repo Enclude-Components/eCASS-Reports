@@ -41,7 +41,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>eCASS02t1__Attendance__c.One_to_One_Attendance</value>
+            <value>eCASS02t1__Attendance__c.eCASS02t1__One_to_One_Attendance</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

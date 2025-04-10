@@ -34,7 +34,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>eCASS02t1__Referral__c.Outgoing</value>
+            <value>eCASS02t1__Referral__c.eCASS02t1__Outgoing</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
