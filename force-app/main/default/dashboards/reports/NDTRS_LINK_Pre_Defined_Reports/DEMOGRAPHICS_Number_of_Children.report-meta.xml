@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_18750676</developerName>
+        <masterLabel>Age Categories</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>FK_$Contact.X4b_Age__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>18</to>
+            </sourceValues>
+            <value>Under 18 years old</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>18</from>
+                <to>24</to>
+            </sourceValues>
+            <value>18 - 24 years old</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>24</from>
+                <to>34</to>
+            </sourceValues>
+            <value>25 - 34 years old</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>34</from>
+                <to>44</to>
+            </sourceValues>
+            <value>35 - 44 years old</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>44</from>
+                <to>64</to>
+            </sourceValues>
+            <value>44 - 64 years old</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>64</from>
+            </sourceValues>
+            <value>65 years or older</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_70428780</developerName>
+        <masterLabel>Is the NDTRS Form active or closed?</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>NDTRS_Form_2016__c.X33a_Exit_details__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>1. Treatment completed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2. Transferred/referred to another drug/alcohol treatment service</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>4. Client declined further treatment</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5. Client did not return for appointments (no show/DNA)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6. Premature exit for non-compliance. Specify reason</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>7. Released from prison but not linked to other treatment service</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>9. Sentenced to prison</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>14. Prison to prison transfer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>12. No longer lives in the area</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>8. Died</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>10. Other (specify)</sourceValue>
+            </sourceValues>
+            <value>NDTRS LINK Forms with Exit Details</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_53441854</developerName>
+        <masterLabel>Number of Children</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>FK_$Contact.X6_Total_Number_of_Children__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>1</to>
+            </sourceValues>
+            <value>1 child</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>1</from>
+                <to>3</to>
+            </sourceValues>
+            <value>2 - 3 children</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>3</from>
+                <to>5</to>
+            </sourceValues>
+            <value>4 - 5 children</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>5</from>
+                <to>8</to>
+            </sourceValues>
+            <value>6 - 8 children</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>8</from>
+            </sourceValues>
+            <value>8 or more children</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>VerticalColumn</chartType>
+        <enableHoverLabels>true</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_53441854</groupingColumn>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>FK_$Contact.HRB_Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>NDTRS_Form_2016__c.X12_Date_of_Referral__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Contact.X4b_Age__c</field>
+    </columns>
+    <columns>
+        <field>BucketField_18750676</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>FK_$Contact.X6_Total_Number_of_Children__c</field>
+    </columns>
+    <description>A demographics report on the total number of children of clients with an NDTRS LINK Form for the current year</description>
+    <format>Matrix</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_$Contact.X4_Gender__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_53441854</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>DEMOGRAPHICS: Number of Children</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$NDTRS_Form_2016__c@NDTRS_Form_2016__c.Contact__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>NDTRS_Form_2016__c.X12_Date_of_Referral__c</dateColumn>
+        <interval>INTERVAL_CURY</interval>
+    </timeFrameFilter>
+</Report>

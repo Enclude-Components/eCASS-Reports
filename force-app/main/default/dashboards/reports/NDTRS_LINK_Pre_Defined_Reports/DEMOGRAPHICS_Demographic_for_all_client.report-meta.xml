@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_18750676</developerName>
+        <masterLabel>Age Categories</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>FK_$Contact.X4b_Age__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>18</to>
+            </sourceValues>
+            <value>Under 18 years old</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>18</from>
+                <to>24</to>
+            </sourceValues>
+            <value>18 - 24 years old</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>24</from>
+                <to>34</to>
+            </sourceValues>
+            <value>25 - 34 years old</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>34</from>
+                <to>44</to>
+            </sourceValues>
+            <value>35 - 44 years old</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>44</from>
+                <to>64</to>
+            </sourceValues>
+            <value>44 - 64 years old</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>64</from>
+            </sourceValues>
+            <value>65 years or older</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_70428780</developerName>
+        <masterLabel>Is the NDTRS Form active or closed?</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>NDTRS_Form_2016__c.X33a_Exit_details__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>1. Treatment completed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2. Transferred/referred to another drug/alcohol treatment service</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>4. Client declined further treatment</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5. Client did not return for appointments (no show/DNA)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6. Premature exit for non-compliance. Specify reason</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>7. Released from prison but not linked to other treatment service</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>9. Sentenced to prison</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>14. Prison to prison transfer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>12. No longer lives in the area</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>8. Died</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>10. Other (specify)</sourceValue>
+            </sourceValues>
+            <value>NDTRS LINK Forms with Exit Details</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>Line</chartType>
+        <enableHoverLabels>true</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>CUST_CREATED_DATE</groupingColumn>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>FK_$Contact.HRB_Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Contact.County_code_for_HRB__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Contact.Small_Area__c</field>
+    </columns>
+    <columns>
+        <field>NDTRS_Form_2016__c.X12_Date_of_Referral__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Contact.X4_Gender__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Contact.X3b_Self_defined_sexual_orientation__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Contact.X4b_Age__c</field>
+    </columns>
+    <columns>
+        <field>BucketField_18750676</field>
+    </columns>
+    <columns>
+        <field>FK_$Contact.X5_Living_with_whom__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Contact.X7_Living_Where__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Contact.X9a_Education_highest_level__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Contact.X9b_Age_left_primary_school__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Contact.X10_Employement_Status__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Contact.X11a_Country_of_Birth__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Contact.X11b_Ethnic_cultural_background__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Contact.X11c_Other_language_at_home__c</field>
+    </columns>
+    <description>A service report with demographic details for all clients with an NDTRS LINK Form for the current year</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>CUST_CREATED_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>DEMOGRAPHICS: Demographic for all client</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$NDTRS_Form_2016__c@NDTRS_Form_2016__c.Contact__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>NDTRS_Form_2016__c.X12_Date_of_Referral__c</dateColumn>
+        <interval>INTERVAL_CURY</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_3125745</developerName>
+        <masterLabel>Age Categories</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>FK_$Contact.X4b_Age__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>18</to>
+            </sourceValues>
+            <value>Under 18 years old</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>18</from>
+                <to>24</to>
+            </sourceValues>
+            <value>18 - 24 years old</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>24</from>
+                <to>34</to>
+            </sourceValues>
+            <value>25 - 34 years old</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>34</from>
+                <to>44</to>
+            </sourceValues>
+            <value>35 - 44 years old</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>44</from>
+                <to>64</to>
+            </sourceValues>
+            <value>45 - 64 years old</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>64</from>
+            </sourceValues>
+            <value>65 years or older</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_70428780</developerName>
+        <masterLabel>Exit Details - Reason for Discharge</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>NDTRS_Form_2016__c.X33a_Exit_details__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>1. Treatment completed</sourceValue>
+            </sourceValues>
+            <value>Treatment Completed</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>2. Transferred/referred to another drug/alcohol treatment service</sourceValue>
+            </sourceValues>
+            <value>Transferred/Referred to Another Drug or Alcohol Service</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>4. Client declined further treatment</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5. Client did not return for appointments (no show/DNA)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6. Premature exit for non-compliance. Specify reason</sourceValue>
+            </sourceValues>
+            <value>Premature Exit</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>7. Released from prison but not linked to other treatment service</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>9. Sentenced to prison</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>14. Prison to prison transfer</sourceValue>
+            </sourceValues>
+            <value>Prison</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>12. No longer lives in the area</sourceValue>
+            </sourceValues>
+            <value>Moved</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>8. Died</sourceValue>
+            </sourceValues>
+            <value>Died</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>Donut</chartType>
+        <enableHoverLabels>true</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_70428780</groupingColumn>
+        <legendPosition>OnChart</legendPosition>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>true</showPercentage>
+        <showTotal>true</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>FK_$Contact.Full_name__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Contact.HRB_Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Contact.X4_Gender__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Contact.X4b_Age__c</field>
+    </columns>
+    <columns>
+        <field>BucketField_3125745</field>
+    </columns>
+    <columns>
+        <field>NDTRS_Form_2016__c.X13_Main_Reason_for_referral__c</field>
+    </columns>
+    <columns>
+        <field>FK_CNTC_OWNER_NAME</field>
+    </columns>
+    <columns>
+        <field>NDTRS_Form_2016__c.X12_Date_of_Referral__c</field>
+    </columns>
+    <columns>
+        <field>NDTRS_Form_2016__c.X35_Date_of_Final_Discharge_or_transfer__c</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <description>A service report with a breakdown on the reason for discharge/exit for the currrent year.</description>
+    <filter>
+        <criteriaItems>
+            <column>BucketField_70428780</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>NDTRS_Form_2016__c.X35_Date_of_Final_Discharge_or_transfer__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>NDTRS_Form_2016__c.Centre__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_70428780</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>NDTRS_Form_2016__c.X33a_Exit_details__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>NDTRS LINK: Reason for Discharge/Exit</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$NDTRS_Form_2016__c@NDTRS_Form_2016__c.Contact__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>NDTRS_Form_2016__c.X12_Date_of_Referral__c</dateColumn>
+        <interval>INTERVAL_CURY</interval>
+    </timeFrameFilter>
+</Report>
