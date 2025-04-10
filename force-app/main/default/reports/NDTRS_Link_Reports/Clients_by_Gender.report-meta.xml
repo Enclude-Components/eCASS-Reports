@@ -15,7 +15,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Contact.NDTRS_Client</value>
+            <value>Contact.eCASS02t1__NDTRS_Client</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>

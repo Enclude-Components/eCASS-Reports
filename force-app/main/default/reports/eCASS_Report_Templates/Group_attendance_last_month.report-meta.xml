@@ -6,7 +6,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
-            <value>eCASS02t1__Attendance__c.Course_Attendance</value>
+            <value>eCASS02t1__Attendance__c.eCASS02t1__Course_Attendance</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>
