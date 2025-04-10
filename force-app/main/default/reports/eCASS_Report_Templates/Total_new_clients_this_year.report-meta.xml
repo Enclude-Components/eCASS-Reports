@@ -9,7 +9,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
-            <value>Contact.Client</value>
+            <value>Contact.eCASS02t1__Client</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>

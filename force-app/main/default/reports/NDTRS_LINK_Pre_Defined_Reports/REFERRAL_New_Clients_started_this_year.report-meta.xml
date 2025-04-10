@@ -130,7 +130,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Contact.Client</value>
+            <value>Contact.eCASS02t1__Client</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

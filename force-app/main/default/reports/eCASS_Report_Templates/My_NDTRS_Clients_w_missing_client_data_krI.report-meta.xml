@@ -29,7 +29,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Contact.NDTRS_Client,Contact.Client</value>
+            <value>Contact.NDTRS_Client,Contact.eCASS02t1__Client</value>
         </criteriaItems>
         <criteriaItems>
             <column>Contact.eCASS02t1__NDTRS_Client__c</column>
